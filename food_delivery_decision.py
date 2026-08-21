@@ -1,8 +1,6 @@
-"""Rule-based food delivery order decision system (core Python only)."""
 
 print("=== Food Delivery Order Decision System ===")
 
-# Collect order details
 order_amount = float(input("Order amount (Rs.): "))
 delivery_distance = float(input("Delivery distance (km): "))
 customer_type = input("Customer type (regular/premium/new): ").strip().lower()
@@ -14,7 +12,6 @@ weather_condition = input("Weather (clear/rain/storm): ").strip().lower()
 peak_hour = input("Is it peak hour? (yes/no): ").strip().lower()
 previous_cancellations = int(input("Previous cancellations: "))
 
-# Default values. They are adjusted through the conditions below.
 decision = "ACCEPTED"
 decision_reason = "Order meets the standard delivery conditions."
 delivery_charge = 30.0
@@ -23,7 +20,6 @@ priority_status = "Normal"
 cancellation_risk = "Low"
 restaurant_status = "Available"
 
-# Restaurant availability and cancellation-risk rules
 if restaurant_rating < 2.5:
     restaurant_status = "Needs quality review"
 elif restaurant_rating < 3.5:
@@ -38,7 +34,6 @@ elif previous_cancellations >= 2:
 else:
     cancellation_risk = "Low"
 
-# Delivery-charge rules
 if delivery_distance > 12:
     delivery_charge = 90.0
 elif delivery_distance > 8:
@@ -62,7 +57,6 @@ elif peak_hour == "yes":
 else:
     delivery_charge = delivery_charge
 
-# Discount and priority rules
 if customer_type == "premium":
     discount = order_amount * 0.10
     priority_status = "High"
@@ -86,7 +80,6 @@ elif demand_level == "low":
 else:
     priority_status = priority_status
 
-# Main decision ladder. Rejection rules are checked before manual-review rules.
 if order_amount <= 0 or delivery_distance <= 0 or prep_time <= 0:
     decision = "REJECTED"
     decision_reason = "Order amount, distance, and preparation time must be positive."
