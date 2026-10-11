@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartGroceries Project Report</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 18mm 16mm 18mm 16mm;
+      box-sizing: border-box;
+      background: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin: 10px 0 8px;
+      color: #0f172a;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: #111827;
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #1f2937;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+
+    ul, ol {
+      margin: 8px 0 8px 20px;
+      padding-left: 18px;
+      font-size: 14px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 18px;
+    }
+
+    .diagram {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .diagram svg {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      background: #f8fafc;
+    }
+
+    .section-title {
+      font-weight: bold;
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>SmartGroceries</h1>
+    <div class="subtitle">Project Report</div>
+
+    <h2>1. Abstract</h2>
+    <p>SmartGroceries is a smart kitchen management and food waste reduction system designed to help users track vegetables, monitor freshness, and receive recipe suggestions based on what they already have at home. The system combines a web-based frontend, a backend API, and a machine learning model to estimate shelf life and improve household food management. The main goal is to reduce food waste by encouraging users to consume items before they spoil and by suggesting practical meals from available ingredients.</p>
+    <p>The project addresses a common daily problem faced by households: fresh produce is often forgotten, stored for too long, and eventually wasted. SmartGroceries provides a simple inventory system where users can add vegetables, record storage duration, and view food freshness status. It also recommends recipes based on ingredient availability and helps users plan meals using the “2–2–2” concept: choose two vegetables, two pantry ingredients, and get two meal ideas.</p>
+    <p>By integrating data management, recipe recommendation, and predictive shelf-life estimation, the system offers a user-friendly solution for smarter grocery planning and healthier consumption habits. It is designed to be accessible, practical, and beneficial for both individuals and families seeking to reduce food waste.</p>
+
+    <h2>2. Introduction</h2>
+    <p>Food waste is a growing global problem, and a significant part of it occurs in households where vegetables and groceries are not tracked properly. Many people buy vegetables without keeping track of how long they have been stored. As a result, fruits and vegetables often become spoiled before they are used. This leads to unnecessary waste, increased expense, and poor food management.</p>
+    <p>SmartGroceries is developed to solve this issue by creating a digital kitchen assistant that helps users record and monitor the status of food items. The application allows users to add vegetables to their kitchen inventory, view freshness levels, and get recipe recommendations based on the items they already have. The system also estimates shelf life using a machine learning model, helping users know which vegetables should be used first.</p>
+    <p>The project is a combination of a frontend interface, backend API, and prediction model. The frontend is built with React, while the backend is built with Flask. The system makes food management easier and encourages users to cook and use ingredients before they spoil. This makes SmartGroceries useful not only for personal convenience but also for environmental sustainability.</p>
+
+    <h2>3. Problem Statement</h2>
+    <p>Households often face challenges in managing fresh groceries efficiently. Some of the key issues include:</p>
+    <ul>
+      <li>Vegetables are purchased in bulk and forgotten in storage.</li>
+      <li>Users are unsure which items should be consumed first.</li>
+      <li>A large amount of food is wasted due to poor tracking and planning.</li>
+      <li>There is no simple tool that combines ingredient tracking with recipe suggestions.</li>
+      <li>Grocery planning is often done without considering what is already available at home.</li>
+    </ul>
+    <p>These problems lead to food spoilage, financial loss, and poor usage of available resources. There is a strong need for a smart system that tracks food inventory, estimates remaining shelf life, and recommends meals based on available ingredients. SmartGroceries addresses this need by combining food tracking with recommendation and prediction features.</p>
+
+    <h2>4. Existing System</h2>
+    <p>The existing system for food management in many households is mostly manual. Users often rely on memory, handwritten notes, or visual inspection to know what is in the kitchen and whether food is still fresh. This approach has several drawbacks:</p>
+    <ul>
+      <li>It is difficult to track inventory accurately.</li>
+      <li>Vegetables are often forgotten until they are spoiled.</li>
+      <li>The freshness of food is judged based on guesswork.</li>
+      <li>There is no automated recommendation for meals or leftover usage.</li>
+      <li>Manual planning does not consider food expiry timing or shelf life.</li>
+    </ul>
+    <p>In some cases, people may use basic mobile notes or spreadsheets, but these are not intelligent or interactive. They do not estimate remaining shelf life or suggest recipes automatically. This creates inefficiency and results in unnecessary food waste.</p>
+
+    <h2>5. Proposed System</h2>
+    <p>The proposed system, SmartGroceries, aims to replace manual food tracking with an intelligent digital solution. It provides a user-friendly web application where users can:</p>
+    <ul>
+      <li>Add vegetables to their kitchen inventory.</li>
+      <li>Record quantity, storage type, and number of days stored.</li>
+      <li>View freshness status such as Fresh, Use Soon, or Use Today.</li>
+      <li>Receive recipe suggestions based on available ingredients.</li>
+      <li>Plan meals using a simple 2–2–2 method.</li>
+      <li>Save favorite or planned meals.</li>
+      <li>Use a machine learning model to estimate shelf life.</li>
+    </ul>
+    <p>The system uses a React-based frontend for a modern and interactive user experience and a Flask backend to handle prediction requests. The backend loads a trained machine learning model and predicts shelf life based on ingredient and environmental attributes such as storage method, temperature, humidity, and days since purchase.</p>
+    <p>The proposed system reduces food waste by helping people consume perishable items before they expire and by enabling better meal planning.</p>
+
+    <h2>6. About the Dataset</h2>
+    <p>The dataset used in the project includes vegetable information and recipe information necessary for kitchen planning and recommendation. The dataset is structured in JSON format and contains:</p>
+    <ul>
+      <li>Vegetable names</li>
+      <li>Food type and category</li>
+      <li>Typical shelf life</li>
+      <li>Storage recommendations</li>
+      <li>Recipe names and ingredients</li>
+      <li>Cooking time and category</li>
+      <li>Pantry items required for each recipe</li>
+      <li>Steps to prepare the food</li>
+    </ul>
+    <p>The vegetable dataset contains items such as Tomato, Spinach, Potato, Carrot, Broccoli, Capsicum, Cucumber, Onion, Brinjal, and Zucchini. Each item includes general shelf-life information and storage tips. This helps the system provide realistic freshness guidance and recommendation logic.</p>
+    <p>The recipe dataset contains a variety of meal suggestions such as stir-fry, soup, curry, salad, and tray-baked dishes. Each recipe includes ingredients, pantry items, cooking time, and preparation steps. The system matches these recipes to the vegetables in the user’s inventory and ranks them based on how many ingredients are already available.</p>
+    <p>The machine learning model uses structured food-related data such as food name, category, storage method, temperature, humidity, quantity, and purchase date details to estimate shelf life in days. This makes the prediction process more effective and meaningful for food management.</p>
+
+    <h2>7. Technologies Used</h2>
+    <p>The SmartGroceries project uses a combination of modern web, backend, and machine learning technologies:</p>
+    <ul>
+      <li><strong>Python:</strong> Used for backend logic and machine learning model development.</li>
+      <li><strong>Flask:</strong> Lightweight web framework used to build the API server.</li>
+      <li><strong>React:</strong> Frontend JavaScript library used to build the interactive user interface.</li>
+      <li><strong>Vite:</strong> Fast development tooling for the frontend.</li>
+      <li><strong>JavaScript / JSX:</strong> Used for interface logic and UI rendering.</li>
+      <li><strong>Pandas:</strong> Used for dataset loading and data processing.</li>
+      <li><strong>Scikit-learn:</strong> Used for training and evaluating the shelf-life prediction model.</li>
+      <li><strong>Pickle:</strong> Used to save and load the trained model.</li>
+      <li><strong>JSON Data Files:</strong> Used for vegetable catalog and recipe dataset storage.</li>
+      <li><strong>Local Storage:</strong> Used in the browser to save inventory, favorites, and meal plans.</li>
+    </ul>
+    <p>These technologies together enable a smooth user experience and efficient intelligent data processing.</p>
+
+    <h2>8. Data Flow Diagram</h2>
+    <div class="diagram">
+      <svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Data flow diagram">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#475569"></path>
+          </marker>
+        </defs>
+
+        <rect x="30" y="170" width="110" height="65" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+        <text x="85" y="207" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e3a8a">User</text>
+
+        <rect x="185" y="120" width="170" height="165" rx="12" fill="#ecfeff" stroke="#0891b2"/>
+        <text x="270" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#164e63">Frontend</text>
+        <text x="270" y="178" text-anchor="middle" font-size="13" fill="#164e63">React App</text>
+        <text x="270" y="220" text-anchor="middle" font-size="12" fill="#164e63">Add Inventory</text>
+        <text x="270" y="238" text-anchor="middle" font-size="12" fill="#164e63">Recipe Matching</text>
+        <text x="270" y="256" text-anchor="middle" font-size="12" fill="#164e63">Meal Planning</text>
+
+        <rect x="425" y="140" width="170" height="125" rx="12" fill="#fef3c7" stroke="#d97706"/>
+        <text x="510" y="170" text-anchor="middle" font-size="16" font-weight="bold" fill="#92400e">Backend</text>
+        <text x="510" y="198" text-anchor="middle" font-size="13" fill="#92400e">Flask API</text>
+        <text x="510" y="220" text-anchor="middle" font-size="12" fill="#92400e">Prediction Requests</text>
+        <text x="510" y="238" text-anchor="middle" font-size="12" fill="#92400e">Data Handling</text>
+
+        <rect x="425" y="285" width="170" height="70" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+        <text x="510" y="315" text-anchor="middle" font-size="16" font-weight="bold" fill="#166534">ML Model</text>
+        <text x="510" y="338" text-anchor="middle" font-size="12" fill="#166534">Shelf Life Prediction</text>
+
+        <rect x="640" y="170" width="95" height="90" rx="12" fill="#e2e8f0" stroke="#475569"/>
+        <text x="687" y="208" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">Output</text>
+        <text x="687" y="230" text-anchor="middle" font-size="12" fill="#334155">Alerts</text>
+        <text x="687" y="246" text-anchor="middle" font-size="12" fill="#334155">Suggestions</text>
+
+        <line x1="140" y1="202" x2="185" y2="202" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="355" y1="202" x2="425" y2="202" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="595" y1="202" x2="640" y2="202" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="510" y1="265" x2="510" y2="285" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="425" y1="320" x2="355" y2="320" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="185" y1="260" x2="140" y2="260" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+      </svg>
+    </div>
+    <p>The system follows a simple and practical data flow. The user adds vegetables to the inventory in the frontend, the frontend stores and validates the item, the backend processes requests, the machine learning model predicts shelf life, and the result is returned to the user. The system then suggests recipes and helps the user decide what to cook first.</p>
+
+    <h2>9. Conclusion</h2>
+    <p>SmartGroceries is a useful and practical solution for reducing household food waste and improving food planning. The system helps users manage vegetables more efficiently, prioritize items that need to be used soon, and make better meal decisions based on what they already have at home. By combining inventory tracking, recipe recommendation, and shelf-life prediction, the project provides a modern and intelligent method for kitchen management.</p>
+    <p>The project demonstrates how technology can be used to support everyday needs in a simple and effective way. It is especially valuable for people who want to reduce waste, save money, and make smarter grocery decisions. With further improvements such as image recognition, mobile app support, and more advanced predictive models, SmartGroceries can become an even more powerful smart home food assistant.</p>
+  </div>
+</body>
+</html>

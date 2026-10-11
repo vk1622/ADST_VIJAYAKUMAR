@@ -1,0 +1,90 @@
+{
+  "dataset_name": "SmartGroceries vegetable reference catalog",
+  "version": "1.0",
+  "vegetables": [
+    {
+      "name": "Tomato",
+      "emoji": "🍅",
+      "type": "Fruit vegetable",
+      "typical_shelf_life": "4–7 days",
+      "storage_tip": "Keep ripe tomatoes at room temperature; refrigerate when very ripe."
+    },
+    {
+      "name": "Potato",
+      "emoji": "🥔",
+      "type": "Root vegetable",
+      "typical_shelf_life": "2–3 weeks",
+      "storage_tip": "Store cool, dark and dry; keep away from onions."
+    },
+    {
+      "name": "Onion",
+      "emoji": "🧅",
+      "type": "Aromatic",
+      "typical_shelf_life": "2–4 weeks",
+      "storage_tip": "Store whole onions in a cool, dry, ventilated place."
+    },
+    {
+      "name": "Carrot",
+      "emoji": "🥕",
+      "type": "Root vegetable",
+      "typical_shelf_life": "2–3 weeks",
+      "storage_tip": "Refrigerate in a produce bag; remove leafy tops."
+    },
+    {
+      "name": "Spinach",
+      "emoji": "🥬",
+      "type": "Leafy green",
+      "typical_shelf_life": "3–5 days",
+      "storage_tip": "Refrigerate dry in a breathable container."
+    },
+    {
+      "name": "Broccoli",
+      "emoji": "🥦",
+      "type": "Cruciferous",
+      "typical_shelf_life": "3–5 days",
+      "storage_tip": "Refrigerate unwashed in a loose bag."
+    },
+    {
+      "name": "Capsicum",
+      "emoji": "🫑",
+      "type": "Fruit vegetable",
+      "typical_shelf_life": "5–7 days",
+      "storage_tip": "Refrigerate in the crisper drawer."
+    },
+    {
+      "name": "Cabbage",
+      "emoji": "🥬",
+      "type": "Cruciferous",
+      "typical_shelf_life": "2–4 weeks",
+      "storage_tip": "Keep whole and refrigerated until cut."
+    },
+    {
+      "name": "Cauliflower",
+      "emoji": "🥦",
+      "type": "Cruciferous",
+      "typical_shelf_life": "4–7 days",
+      "storage_tip": "Refrigerate in a loose bag, stem side down."
+    },
+    {
+      "name": "Cucumber",
+      "emoji": "🥒",
+      "type": "Fruit vegetable",
+      "typical_shelf_life": "4–6 days",
+      "storage_tip": "Keep dry and refrigerated away from very cold spots."
+    },
+    {
+      "name": "Brinjal",
+      "emoji": "🍆",
+      "type": "Nightshade",
+      "typical_shelf_life": "3–5 days",
+      "storage_tip": "Use soon; refrigerate if your kitchen is warm."
+    },
+    {
+      "name": "Zucchini",
+      "emoji": "🥒",
+      "type": "Summer squash",
+      "typical_shelf_life": "4–5 days",
+      "storage_tip": "Refrigerate dry and unwashed."
+    }
+  ]
+}

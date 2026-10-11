@@ -1,0 +1,416 @@
+{
+  "dataset_name": "SmartGroceries leftover-first recipe dataset",
+  "version": "1.0",
+  "description": "Hand-curated demonstration recipe records for ingredient matching and 2-2-2 meal planning. Shelf-life ranges are general guidance, not food-safety guarantees.",
+  "recipes": [
+    {
+      "id": "r01",
+      "name": "Garden vegetable stir-fry",
+      "emoji": "🥦",
+      "time": 20,
+      "category": "Quick dinner",
+      "ingredients": [
+        "Broccoli",
+        "Carrot",
+        "Capsicum",
+        "Onion",
+        "Garlic",
+        "Soy sauce"
+      ],
+      "steps": [
+        "Slice the vegetables into even pieces.",
+        "Stir-fry onion and garlic, then add the remaining vegetables.",
+        "Season with soy sauce and cook until crisp-tender."
+      ],
+      "uses": [
+        "Broccoli",
+        "Carrot",
+        "Capsicum",
+        "Onion"
+      ],
+      "pantry": [
+        "Garlic",
+        "Soy sauce"
+      ],
+      "tags": [
+        "vegetarian",
+        "quick",
+        "high-fiber"
+      ]
+    },
+    {
+      "id": "r02",
+      "name": "Tomato & spinach dal",
+      "emoji": "🍲",
+      "time": 30,
+      "category": "Comfort bowl",
+      "ingredients": [
+        "Spinach",
+        "Tomato",
+        "Onion",
+        "Lentils",
+        "Garlic",
+        "Cumin"
+      ],
+      "steps": [
+        "Simmer lentils until soft.",
+        "Cook onion, tomato and cumin until fragrant.",
+        "Fold in spinach and cooked lentils; simmer for 5 minutes."
+      ],
+      "uses": [
+        "Spinach",
+        "Tomato",
+        "Onion"
+      ],
+      "pantry": [
+        "Lentils",
+        "Garlic",
+        "Cumin"
+      ],
+      "tags": [
+        "vegetarian",
+        "protein-rich",
+        "comfort"
+      ]
+    },
+    {
+      "id": "r03",
+      "name": "Crispy potato & cauliflower tray",
+      "emoji": "🥔",
+      "time": 35,
+      "category": "One-pan meal",
+      "ingredients": [
+        "Potato",
+        "Cauliflower",
+        "Onion",
+        "Yogurt",
+        "Paprika"
+      ],
+      "steps": [
+        "Heat oven to 220°C and cut vegetables into bite-size pieces.",
+        "Toss with oil, paprika and salt; roast until golden.",
+        "Serve with a quick yogurt dip."
+      ],
+      "uses": [
+        "Potato",
+        "Cauliflower",
+        "Onion"
+      ],
+      "pantry": [
+        "Yogurt",
+        "Paprika"
+      ],
+      "tags": [
+        "vegetarian",
+        "one-pan",
+        "family"
+      ]
+    },
+    {
+      "id": "r04",
+      "name": "Carrot & cabbage slaw wraps",
+      "emoji": "🥬",
+      "time": 15,
+      "category": "Fresh & fast",
+      "ingredients": [
+        "Cabbage",
+        "Carrot",
+        "Cucumber",
+        "Lemon",
+        "Yogurt",
+        "Flatbread"
+      ],
+      "steps": [
+        "Shred cabbage and carrot; slice cucumber.",
+        "Mix lemon juice into yogurt and toss through vegetables.",
+        "Pile into warm flatbread and roll."
+      ],
+      "uses": [
+        "Cabbage",
+        "Carrot",
+        "Cucumber"
+      ],
+      "pantry": [
+        "Lemon",
+        "Yogurt",
+        "Flatbread"
+      ],
+      "tags": [
+        "vegetarian",
+        "no-cook",
+        "quick"
+      ]
+    },
+    {
+      "id": "r05",
+      "name": "Brinjal tomato curry",
+      "emoji": "🍛",
+      "time": 30,
+      "category": "Weeknight curry",
+      "ingredients": [
+        "Brinjal",
+        "Tomato",
+        "Onion",
+        "Coconut milk",
+        "Curry powder"
+      ],
+      "steps": [
+        "Brown onion with curry powder.",
+        "Add cubed brinjal and tomato; stir for 3 minutes.",
+        "Pour in coconut milk and simmer until tender."
+      ],
+      "uses": [
+        "Brinjal",
+        "Tomato",
+        "Onion"
+      ],
+      "pantry": [
+        "Coconut milk",
+        "Curry powder"
+      ],
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "comfort"
+      ]
+    },
+    {
+      "id": "r06",
+      "name": "Peppery cucumber & tomato salad",
+      "emoji": "🥒",
+      "time": 10,
+      "category": "Bright side",
+      "ingredients": [
+        "Cucumber",
+        "Tomato",
+        "Capsicum",
+        "Lemon",
+        "Feta"
+      ],
+      "steps": [
+        "Chop vegetables into bite-size pieces.",
+        "Toss with lemon, olive oil, black pepper and crumbled feta.",
+        "Serve immediately or pack for lunch."
+      ],
+      "uses": [
+        "Cucumber",
+        "Tomato",
+        "Capsicum"
+      ],
+      "pantry": [
+        "Lemon",
+        "Feta"
+      ],
+      "tags": [
+        "vegetarian",
+        "no-cook",
+        "quick"
+      ]
+    },
+    {
+      "id": "r07",
+      "name": "Broccoli & potato soup",
+      "emoji": "🥣",
+      "time": 30,
+      "category": "Comfort bowl",
+      "ingredients": [
+        "Broccoli",
+        "Potato",
+        "Onion",
+        "Vegetable stock",
+        "Milk"
+      ],
+      "steps": [
+        "Soften onion in a pot, then add diced potato and stock.",
+        "Add broccoli and simmer until all vegetables are tender.",
+        "Blend with milk until creamy; season to taste."
+      ],
+      "uses": [
+        "Broccoli",
+        "Potato",
+        "Onion"
+      ],
+      "pantry": [
+        "Vegetable stock",
+        "Milk"
+      ],
+      "tags": [
+        "vegetarian",
+        "comfort",
+        "freezer-friendly"
+      ]
+    },
+    {
+      "id": "r08",
+      "name": "Spinach, carrot & chickpea bowl",
+      "emoji": "🥗",
+      "time": 20,
+      "category": "Balanced bowl",
+      "ingredients": [
+        "Spinach",
+        "Carrot",
+        "Tomato",
+        "Chickpeas",
+        "Lemon",
+        "Cumin"
+      ],
+      "steps": [
+        "Roast or pan-sear sliced carrot with cumin.",
+        "Warm chickpeas with chopped tomato.",
+        "Serve over spinach with lemon dressing."
+      ],
+      "uses": [
+        "Spinach",
+        "Carrot",
+        "Tomato"
+      ],
+      "pantry": [
+        "Chickpeas",
+        "Lemon",
+        "Cumin"
+      ],
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "protein-rich"
+      ]
+    },
+    {
+      "id": "r09",
+      "name": "Cabbage & capsicum fried rice",
+      "emoji": "🍚",
+      "time": 18,
+      "category": "Leftover saver",
+      "ingredients": [
+        "Cabbage",
+        "Capsicum",
+        "Carrot",
+        "Cooked rice",
+        "Soy sauce",
+        "Spring onion"
+      ],
+      "steps": [
+        "Use chilled cooked rice for the best texture.",
+        "Stir-fry the vegetables over high heat.",
+        "Add rice and soy sauce; toss until hot throughout."
+      ],
+      "uses": [
+        "Cabbage",
+        "Capsicum",
+        "Carrot"
+      ],
+      "pantry": [
+        "Cooked rice",
+        "Soy sauce",
+        "Spring onion"
+      ],
+      "tags": [
+        "vegetarian",
+        "leftover-friendly",
+        "quick"
+      ]
+    },
+    {
+      "id": "r10",
+      "name": "Roasted vegetable pasta",
+      "emoji": "🍝",
+      "time": 28,
+      "category": "Family favorite",
+      "ingredients": [
+        "Tomato",
+        "Capsicum",
+        "Zucchini",
+        "Onion",
+        "Pasta",
+        "Parmesan"
+      ],
+      "steps": [
+        "Roast chopped vegetables until soft and caramelized.",
+        "Cook pasta, reserving a little cooking water.",
+        "Toss pasta with roasted vegetables and parmesan."
+      ],
+      "uses": [
+        "Tomato",
+        "Capsicum",
+        "Onion"
+      ],
+      "pantry": [
+        "Pasta",
+        "Parmesan"
+      ],
+      "tags": [
+        "vegetarian",
+        "family",
+        "leftover-friendly"
+      ]
+    },
+    {
+      "id": "r11",
+      "name": "Carrot & potato fritters",
+      "emoji": "🥞",
+      "time": 22,
+      "category": "Waste less",
+      "ingredients": [
+        "Carrot",
+        "Potato",
+        "Onion",
+        "Egg",
+        "Flour"
+      ],
+      "steps": [
+        "Grate vegetables and squeeze out excess moisture.",
+        "Mix with egg, flour and seasoning.",
+        "Pan-fry spoonfuls until crisp and cooked through."
+      ],
+      "uses": [
+        "Carrot",
+        "Potato",
+        "Onion"
+      ],
+      "pantry": [
+        "Egg",
+        "Flour"
+      ],
+      "tags": [
+        "vegetarian",
+        "leftover-friendly",
+        "quick"
+      ]
+    },
+    {
+      "id": "r12",
+      "name": "Cauliflower & chickpea skillet",
+      "emoji": "🍳",
+      "time": 25,
+      "category": "Plant-powered",
+      "ingredients": [
+        "Cauliflower",
+        "Tomato",
+        "Spinach",
+        "Chickpeas",
+        "Coconut milk",
+        "Cumin"
+      ],
+      "steps": [
+        "Toast cumin, then add cauliflower florets and tomato.",
+        "Stir in chickpeas and coconut milk; cover until tender.",
+        "Fold through spinach just before serving."
+      ],
+      "uses": [
+        "Cauliflower",
+        "Tomato",
+        "Spinach"
+      ],
+      "pantry": [
+        "Chickpeas",
+        "Coconut milk",
+        "Cumin"
+      ],
+      "tags": [
+        "vegetarian",
+        "vegan",
+        "one-pan"
+      ]
+    }
+  ]
+}
